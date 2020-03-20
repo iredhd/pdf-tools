@@ -1,0 +1,41 @@
+{
+  "name": "pdf-tools",
+  "version": "1.0.0",
+  "description": "An API for manipulating PDFs based on NodeJS totally open-source.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon src/index.js",
+    "prod": "npx pm2 start src/index.js",
+    "commit": "npx git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iredhd/pdf-tools.git"
+  },
+  "author": "Ighor Redhd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iredhd/pdf-tools/issues"
+  },
+  "homepage": "https://github.com/iredhd/pdf-tools#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "git-cz": "^4.3.1",
+    "nodemon": "^2.0.2",
+    "release-it": "^13.1.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "node-qpdf": "^1.0.3",
+    "pm2": "^4.2.3",
+    "rimraf": "^3.0.2",
+    "uuid": "^7.0.2",
+    "zip-folder": "^1.0.0"
+  }
+}
